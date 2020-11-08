@@ -41,7 +41,7 @@ class Game{
 
                 Player.getPlayerInfo();
                  image(back_img, 0, 0, 1000, 800);
-                 var x =100;
+                 var x =300;
                  var y=200;
                  var index =0;
                  drawSprites();
@@ -74,12 +74,12 @@ class Game{
                 
                  
 
-                if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
-                    player.distance -= 10
+                if (keyIsDown(RIGHT_ARROW)) {
+                    player.distance = +10
                     player.update();
                 }
                 if (keyIsDown(LEFT_ARROW) && player.index !== null) {
-                    player.distance += 10
+                    player.distance = -10
                     player.update();
                 }
             
